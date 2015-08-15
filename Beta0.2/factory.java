@@ -8,7 +8,7 @@ public class factory{
 			return new simple();
 		if(object.equals("Doubly"))
 			return new doubly();
-		if(object.equals("Circle"))
+		if(object.equals("Circular"))
 			return new circular();
 		return null;
 	}
