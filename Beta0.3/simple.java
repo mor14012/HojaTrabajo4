@@ -1,4 +1,3 @@
-
 public class simple<E> extends linkedlist<E>{
 	protected nodo <E> head;
 
