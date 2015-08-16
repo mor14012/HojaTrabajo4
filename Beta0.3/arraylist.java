@@ -24,4 +24,3 @@ public class arraylist<E> extends stack<E>{
     }
        
 }
-
