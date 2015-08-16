@@ -5,7 +5,6 @@ public class circular<E> extends linkedlist<E>{
 		tail = null;
 	}
 	public void addFirst(E value){
-		
 		nodo<E> Nodo = new nodo<E>(value);
 		Nodo.setValue(value);
 		size++;
