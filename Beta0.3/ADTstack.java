@@ -3,3 +3,4 @@ public interface ADTstack<E>{
 	public void push(E value);
 	public E pop();
 }
+
