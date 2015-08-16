@@ -1,12 +1,29 @@
-public class vector<E> extends stack<E>{
-	//Variable Vector
-	public void vector(){
-		//Inicializar variables
-	}
-	public void push(E value){
+import java.util.Vector;
 
-	}
-	public E pop(){
-		return null;
-	}
+
+public class vector<E> extends stack<E>{
+	protected Vector<E> vec;
+	
+	
+	 
+    
+    public vector(){
+        vec = new Vector<E>();
+		}
+	
+	public int size(){
+        return vec.size();
+    }
+ 
+    public void push(E val){
+		size++;
+        vec.add(val);
+    }
+    
+    public E pop(){
+		size--;
+        return vec.remove(size()-1);
+    	
+    }
+       
 }
