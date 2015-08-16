@@ -10,3 +10,5 @@ public abstract class linkedlist<E> extends stack<E> implements ADTlinkedlist<E>
 		return removeFirst();
 	}
 }
+
+
