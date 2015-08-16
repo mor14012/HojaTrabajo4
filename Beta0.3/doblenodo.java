@@ -1,17 +1,31 @@
 public class doblenodo<E> extends nodo<E>{
-	protected nodo previous;
-	protected nodo siguiente;
+	protected E value;
+	protected doblenodo<E> nextt;
+	protected doblenodo<E>  previous;
+	
 
-	public void doblenodo(){
-		value = null;
-		next = null;
-		previous = null;
+	public void doblenodo(E val,doblenodo<E> siguiente,doblenodo<E> anterior){
+		value=val;
+		nextt=siguiente;
+		if (nextt!= null){
+			nextt.previous=this;
+			
+		}
+		previous= anterior;
+			if(previous!=null){
+				previous.nextt=this;
+			}
 	}
-	public void setPrevious(nodo nodo){
-		previous = nodo;
+	public doblenodo(E val){
+		this(val,null,null);	
 	}
-	public nodo getPrevious(){
+	
+	public void setPrevious(doblenodo<E> prev){
+		previous = prev;
+	}
+	public doblenodo<E> getPrevious(){
 		return previous;
-	}
-
+		}
+		
+	
 }
