@@ -31,3 +31,4 @@ public class doubly<E> extends linkedlist<E>{
 	
 	
 }
+
