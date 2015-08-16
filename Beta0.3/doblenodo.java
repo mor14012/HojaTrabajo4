@@ -1,46 +1,54 @@
-public class doblenodo<E> {
+public class doblenodo<E>{
+	
 	protected E value;
-	protected doblenodo<E> nextE;
+	protected doblenodo<E> next;
 	protected doblenodo<E> previous;
 	
-
-	public void doblenodo(E val,doblenodo<E> siguiente,doblenodo<E> anterior){
-		value=val;
-		nextE=siguiente;
-		if (nextE!= null){
-			nextE.previous=this;
-			
+	
+	
+	public doblenodo(E val,doblenodo<E> siguiente,doblenodo<E> anterior) {
+		value = val;
+		next = siguiente;
+		if(next != null){
+			next.previous = this;
 		}
-		previous= anterior;
-			if(previous!=null){
-				previous.nextE=this;
-			}
+		previous = anterior;
+		if (previous != null){
+			previous.next = this;
+		}
 	}
 	
-	
-		
 	public doblenodo(E val){
-		this(val,null,null);	
+		this(val,null,null);
 	}
 	
-	public void setPrevious(doblenodo<E> prev){
-		previous = prev;
-	}
-	public doblenodo<E> getPrevious(){
-		return previous;
+	public doblenodo<E> getNext() {
+		 
+			return next; 
 		}
 		
-	public void setNext(doblenodo<E> next1){
-		nextE=next1;
-	}
-	public doblenodo<E> getNext(){
-		return nextE;
-	}
-	public void setValue(E val){
-		value=val;
-	}
-	public E getValue(){
-		return value;
-	}
+		
+		public void setNext(doblenodo<E> nextt) {
+	
+			next = nextt; 
+		}
 
+		
+		public E getValue() {
+	  
+			return value; 
+		}
+		
+		
+		public void setValue(E val) {
+		 
+			value = val; 
+		}
+
+		
+		public doblenodo<E> getPrevious() {
+			
+			return null;
+		}
+		
 }
