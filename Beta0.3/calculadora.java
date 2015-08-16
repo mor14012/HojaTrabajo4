@@ -119,6 +119,7 @@ public class calculadora<P> implements ADTcalculadora<P>{
 				}
 
 				c = b-a;
+				
 		    	Stack.push(c);
 
 		    	//System.out.println("Encontramos una resta en "+i);
